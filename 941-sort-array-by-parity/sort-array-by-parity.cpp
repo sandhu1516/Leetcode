@@ -10,11 +10,11 @@ public:
                 start++;
                 end--;
             }
-            else if(nums[start]%2!=0){
-                end--;
+            else if(nums[start]%2==0){
+                start++;
             }
             else{
-                start++;
+                end--;
             }
         }
         return nums;
