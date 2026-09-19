@@ -8,6 +8,8 @@ public:
         int end = n-1;
 
         for(int i=n-1;i>=0;i--){
+            // n - 1 se start karte hain kyunki hum har baar sabse badi square value ko ans ke sabse last position par rakhna chahte hain.
+            
             if(abs(nums[start]) > abs(nums[end])){
                 ans[i] = nums[start] * nums[start];
                 start++;
